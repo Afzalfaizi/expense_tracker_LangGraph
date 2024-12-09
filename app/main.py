@@ -18,7 +18,7 @@ app = FastAPI(lifespan=lifespan)
 
 @app.get("/")
 async def read_root():
-    return {"Hello": "World"}
+    return {"Expense Tracker App with LangGraph"}
 
 
 app.include_router(router=router, prefix="/api", tags=["api"])
